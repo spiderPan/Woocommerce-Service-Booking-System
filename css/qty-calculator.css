@@ -1,0 +1,4 @@
+.single_add_to_cart_button.button.alt, .quantity.buttons_added { display: none !important; }
+#my_custom_checkout_field { width: 202%; float: left; }
+#e_deliverydate_field { float: left; }
+#order-desc { float: left; margin-left: 10px; margin-top: 25px; width: 290px !important; }
