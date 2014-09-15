@@ -13,7 +13,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 
 	load_plugin_textdomain( 'wsbs', false, dirname( plugin_basename( __FILE__ ) ) . '/language/' );
 
-	function wqc_woocommerce_calculator_form() {
+	function wsbs_woocommerce_calculator_form() {
 
 		global $post, $woocommerce, $product;
 
@@ -36,7 +36,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 	}
 
 	// Add the code above in front of the "add to cart" button
-	add_action( 'woocommerce_before_add_to_cart_button', 'wqc_woocommerce_calculator_form' );
+	add_action( 'woocommerce_before_add_to_cart_button', 'wsbs_woocommerce_calculator_form' );
 
 	/*	New product tab
 	**	Add a new custom tab to the admin screen, where the user can enable the calculator
